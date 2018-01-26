@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS/HTML Workshop with Convargo</title>
-  </head>
-  <body>
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-    </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="convargo.js"></script>
-    <script src="index.js"></script>
-  </body>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('http://www.volvotrucks.fr/content/dam/volvo/volvo-trucks/masters/euro-6/used-trucks/used-trucks-landing/2324x1200-used-truck-overview-truck-road.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Convargo
+  </div>
+
+<div class=" w3-display-right w3-text-white w3-padding-large">
+
+  <p>Please enter the needed informartions to calcul the price of the course</p>
+  <h4>Trucker informations: </h4>
+  <div id="trucker">
+    <form>
+      <input class="name" type="text" placeholder="Trucker name" />
+      <input class="price-by-km" type="number" placeholder="Price by km" />
+      <input class="price-by-cubic" type="number" placeholder="Price by m3" />
+    </form>
+
+  </div>
+  <h4>Shipper informations: </h4>
+  <div id="shipper">
+
+    <label><input class="name" type="text" placeholder="Shipper name" /></label>
+    <input class="distance" type="number" placeholder="Distance in km" />
+    <input class="volume" type="number" placeholder="Volume in m3" />
+    <br>
+    <label><input class="option" type="checkbox" name="deduction-box" value="" placeholder="Deductible option">Deductible Option (additional 1€/M3)</label>
+  </div>
+  <button id="compute">Compute</button>
+  <div id="actors"></div>
+  <script src="convargo.js"></script>
+  <script src="index.js"></script>
+  </div>
+
+
+  <div class="w3-display-bottomleft w3-padding-large">
+     by Valentin Le Gall
+  </div>
+</div>
+</div>
+
+
+</body>
 </html>
